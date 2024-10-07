@@ -1,49 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Navbar: React.FC = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+    
     return (
-        // <nav className="bg-white fixed top-0 left-0 w-full z-50 py-3">
-        //     <div className="w-full flex justify-between items-center pt-4">
-        //         <div className='ml-24'>
-        //             <a href="https://tplinsurance.com" className=''>
-        //                 <img src="https://tplinsurance.com/storage/2023/07/TPL-insurance-logo-updatenew.webp" className='max-w-[200px]' />
-        //             </a>
-        //         </div>
-        //         <div className='navbar-links mr-14'>
-        //             <ul className="flex space-x-4">
-        //                 <li className='pr-6 pt-2'><a href='#' className=" hover:text-[#f57920] text-[#696E77]">About us</a></li>
-        //                 <li className='pr-4 pt-2'><a href='#' className="hover:text-[#f57920] text-[#696E77]">Products</a></li>
-        //                 <li className='pr-4 pt-2'><a href='#' className="hover:text-[#f57920] text-[#696E77]">Takaful</a></li>
-        //                 <li className='pr-4 pt-2'><a href='#' className="hover:text-[#f57920] text-[#696E77]">Investors</a></li>
-        //                 <li className='pr-4 pt-2'><a href='#' className="hover:text-[#f57920] text-[#696E77]">Media</a></li>
-        //                 <li className='pr-4 pt-2'><a href='#' className="hover:text-[#f57920] text-[#696E77]">Contact</a></li>
-        //                 <li className=' text-[#696E77] border-[#f57920] border rounded-lg p-2'>
-        //                     <form>
-        //                         <div className='flex justify-between items-center border-1'>
-        //                             <input type="text" placeholder='Search here...' className='rounded outline-none text-base placeholder:text-[#696E77]' />
-        //                             <button className='bg-white text-[#f57920]' type='submit'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
-        //                                 <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-        //                             </svg>
-        //                             </button>
-        //                         </div>
-        //                     </form>
-        //                 </li>
-        //                 <li className='bg-[#f57920] text-white text-sm w-[100px] text-center pt-3 rounded'><a href='#' className="">My TPLI</a></li>
-        //             </ul>
-        //         </div>
-        //     </div>
-        // </nav>
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3 px-10">
-                <div className="container-fluid nav-container p-3">
-                    <a href="https://tplinsurance.com" className="navbar-brand max-w-[200px] ml-10">
+            <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3 px-4 md:px-10">
+                <div className="container-fluid nav-container p-2 md:p-3">
+                    <a href="https://tplinsurance.com" className="navbar-brand  max-w-[150px] md:max-w-[200px] ml-4 md:ml-10">
                         <img src="https://tplinsurance.com/storage/2023/07/TPL-insurance-logo-updatenew.webp" alt="TPL Insurance Logo" />
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="navbar-collapse mr-10" id="navbarResponsive">
-                        <ul className="navbar-nav ms-auto">
+                        <ul className="navbar-nav ms-auto text-sm md:text-base">
                             <li className="nav-item dropdown pr-2">
                                 <a className="nav-link  hover:text-[#f57920]" href="https://tplinsurance.com/about-us/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     About Us
@@ -105,17 +81,17 @@ const Navbar: React.FC = () => {
                             </li>
                             <li className="nav-item text-[#696E77] !border-[#f57920] border rounded-lg p-1.5">
                                 <form className="d-flex" role="search" action="https://tplinsurance.com/">
-                                    <div className="input-group flex justify-between items-center">
-                                        <input className="border-none outline-none rounded text-base placeholder:text-[#696E77]" type="text" placeholder="Search here..." name="s" />
+                                    <div className="input-group">
+                                        <input className="border-none outline-none rounded text-sm md:text-base placeholder:text-[#696E77]" type="text" placeholder="Search here..." name="s" />
                                         <button className="btn text-[#f57920]" type="submit">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21L15.803 15.803A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                                             </svg>
                                         </button>
                                     </div>
                                 </form>
                             </li>
-                            <li className="nav-item ml-4 bg-[#f57920] py-1 px-2 rounded hover:bg-white hover:border hover:border-[#f57920] hover:!text-[#f57920]">
+                            <li className="nav-item ml-2 bg-[#f57920] py-1 px-2 rounded hover:bg-white hover:border hover:border-[#f57920] hover:!text-[#f57920]">
                                 <a className="nav-link text-white hover:!text-[#f57920]" href="https://tplinsurance.com/my-tpli/">My TPLI</a>
                             </li>
                         </ul>
