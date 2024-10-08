@@ -18,11 +18,11 @@ const MainSection = () => {
                 </svg>
             </button>
             <div className="h-100">
-                <div className="flex flex-col items-center justify-center h-screen text-center p-4">
+                <div className="flex flex-col h-full align-items-center text-center hero">
                     <div className="w-full">
-                        <h3 className="text-3xl">EVERYTHING COMES WITH A RISK,</h3>
-                        <h3 className="text-3xl pt-1 font-semibold">THAT'S WHY WE ARE HERE TO</h3>
-                        <h2 className="text-4xl pt-4 herofont">
+                        <h3 className="heroHeader">EVERYTHING COMES WITH A RISK,</h3>
+                        <h3 className="heroHeader"><strong>THAT'S WHY WE ARE HERE TO</strong></h3>
+                        <h2 className="herofont">
                             INSURE YOUR <span className="block sm:inline text-[#f57920] heroAnimateText">{text}<Cursor cursorStyle='|' /></span>
                         </h2>
                         <a className="btn btn-primary btn_getinsu" href="#">Get Insured</a>
@@ -35,114 +35,116 @@ const MainSection = () => {
                         24×7 customer services, catering to your needs anytime, anywhere.
                     </p>
                     <div className="container flex flex-col items-center mt-14">
-                        <div className="text-lg mb-1 text-[#a5a1a1]">
-                            <h3 className="">Digital Products</h3>
-                        </div>
-                        <div className="flex flex-wrap justify-center items-center gap-4 mt-1 w-full">
-                            <div className="pro_IconBox flex flex-col items-center rounded-lg border hover:border hover:shadow-lg w-full sm:w-auto">
-                                <span className="probox-icon">
-                                    <img decoding="async" src="https://tplinsurance.com/storage/2023/07/01.webp" alt="icon" width={42} height={42} />
-                                </span>
-                                <h3 className="probox-heading mt-3">Auto</h3>
+                        <div>
+                            <div className="text-lg mb-1 text-[#a5a1a1]">
+                                <h3 className="">Digital Products</h3>
                             </div>
-                            <div className="pro_IconBox flex flex-col items-center text-center bg-white rounded-lg border hover:shadow-lg w-full sm:w-auto">
-                                <span className="probox-icon">
-                                    <img decoding="async" src="https://tplinsurance.com/storage/2023/07/02.webp" alt="icon" width={42} height={42} />
-                                </span>
-                                <h3 className="probox-heading mt-3">Travel</h3>
-                            </div>
-                            <div className="pro_IconBox flex flex-col items-center rounded-lg border hover:shadow-lg w-full sm:w-auto">
-                                <span className="probox-icon">
-                                    <img decoding="async" src="https://tplinsurance.com/storage/2023/07/03.webp" alt="icon" width={42} height={42} />
-                                </span>
-                                <h3 className="probox-heading mt-3">Home</h3>
-                            </div>
-                            {/* <div className="flex flex-col items-center hover:shadow-lg">
+                            <div className="flex flex-wrap items-center gap-4 mt-1 w-full">
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                    <span className="probox-icon">
+                                        <img decoding="async" src="https://tplinsurance.com/storage/2023/07/01.webp" alt="icon" width={42} height={42} />
+                                    </span>
+                                    <h3 className="probox-heading">Auto</h3>
+                                </div>
+                                <div className="pro_IconBox flex flex-col items-center justify-center text-center bg-white rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                    <span className="probox-icon">
+                                        <img decoding="async" src="https://tplinsurance.com/storage/2023/07/02.webp" alt="icon" width={42} height={42} />
+                                    </span>
+                                    <h3 className="probox-heading">Travel</h3>
+                                </div>
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                    <span className="probox-icon">
+                                        <img decoding="async" src="https://tplinsurance.com/storage/2023/07/03.webp" alt="icon" width={42} height={42} />
+                                    </span>
+                                    <h3 className="probox-heading">Home</h3>
+                                </div>
+                                {/* <div className="flex flex-col items-center hover:shadow-lg">
 
                             </div> */}
-                        </div>
-                        <div className="text-lg mb-1 text-[#a5a1a1]" style={{ marginTop: "2rem" }}>Other Products</div>
-                        <div className="flex flex-wrap justify-start items-center gap-4 mt-1">
-                            <div className="pro_IconBox flex flex-col items-center rounded-lg border hover:shadow-lg w-full sm:w-auto">
-                                <span className="probox-icon">
-                                    <img decoding="async" src="https://tplinsurance.com/storage/2023/07/04.webp" alt="icon" width={42} height={42} />
-                                </span>
-                                <h3 className="probox-heading mt-3">Health</h3>
                             </div>
-                            <div className="pro_IconBox flex flex-col items-center text-center bg-white rounded-lg border hover:shadow-lg w-full sm:w-auto">
-                                <span className="probox-icon">
-                                    <img decoding="async" src="https://tplinsurance.com/storage/2023/07/05.webp" alt="icon" width={42} height={42} />
-                                </span>
-                                <h3 className="probox-heading mt-3">Property</h3>
+                            <div className="text-lg mb-1 text-[#a5a1a1]" style={{ marginTop: "2rem" }}>Other Products</div>
+                            <div className="flex flex-wrap justify-start items-center gap-4 mt-1">
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                    <span className="probox-icon">
+                                        <img decoding="async" src="https://tplinsurance.com/storage/2023/07/04.webp" alt="icon" width={42} height={42} />
+                                    </span>
+                                    <h3 className="probox-heading">Health</h3>
+                                </div>
+                                <div className="pro_IconBox flex flex-col items-center justify-center text-center bg-white rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                    <span className="probox-icon">
+                                        <img decoding="async" src="https://tplinsurance.com/storage/2023/07/05.webp" alt="icon" width={42} height={42} />
+                                    </span>
+                                    <h3 className="probox-heading">Property</h3>
+                                </div>
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                    <span className="probox-icon">
+                                        <img decoding="async" src="https://tplinsurance.com/storage/2023/07/Bikeicon.png" alt="icon" width={42} height={42} />
+                                    </span>
+                                    <h3 className="probox-heading">Bike</h3>
+                                </div>
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                    <span className="probox-icon">
+                                        <img decoding="async" src="https://tplinsurance.com/storage/2023/07/09.webp" alt="icon" width={42} height={42} />
+                                    </span>
+                                    <h3 className="probox-heading">Mobile</h3>
+                                </div>
                             </div>
-                            <div className="pro_IconBox flex flex-col items-center rounded-lg border hover:shadow-lg w-full sm:w-auto">
-                                <span className="probox-icon">
-                                    <img decoding="async" src="https://tplinsurance.com/storage/2023/07/Bikeicon.png" alt="icon" width={42} height={42} />
-                                </span>
-                                <h3 className="probox-heading mt-3">Bike</h3>
-                            </div>
-                            <div className="pro_IconBox flex flex-col items-center rounded-lg border hover:shadow-lg w-full sm:w-auto">
-                                <span className="probox-icon">
-                                    <img decoding="async" src="https://tplinsurance.com/storage/2023/07/09.webp" alt="icon" width={42} height={42} />
-                                </span>
-                                <h3 className="probox-heading mt-3">Mobile</h3>
-                            </div>
-                        </div>
-                        <div className="flex flex-wrap justify-start items-center gap-4 mt-1">
-                            <div className="pro_IconBox flex flex-col items-center rounded-lg border hover:shadow-lg w-full sm:w-auto">
-                                <span className="probox-icon">
-                                    <img decoding="async" src="https://tplinsurance.com/storage/2023/07/06.webp" alt="icon" width={42} height={42} />
-                                </span>
-                                <h3 className="probox-heading mt-3">Marine</h3>
-                            </div>
-                            <div className="pro_IconBox flex flex-col items-center text-center bg-white rounded-lg border hover:shadow-lg w-full sm:w-auto">
-                                <span className="probox-icon">
-                                    <img decoding="async" src="https://tplinsurance.com/storage/2023/07/07.webp" alt="icon" width={42} height={42} />
-                                </span>
-                                <h3 className="probox-heading mt-3">Engineering</h3>
-                            </div>
-                            <div className="pro_IconBox flex flex-col items-center rounded-lg border hover:shadow-lg w-full sm:w-auto">
-                                <span className="probox-icon">
-                                    <img decoding="async" src="https://tplinsurance.com/storage/2023/07/08.webp" alt="icon" width={42} height={42} />
-                                </span>
-                                <h3 className="probox-heading mt-3">Cyber-Risk</h3>
-                            </div>
-                            <div className="pro_IconBox flex flex-col items-center rounded-lg border hover:shadow-lg w-full sm:w-auto">
-                                <span className="probox-icon">
-                                    <img decoding="async" src="https://tplinsurance.com/storage/2023/07/Terrorism.png" alt="icon" width={42} height={42} />
-                                </span>
-                                <h3 className="probox-heading mt-3">Miscellaneous</h3>
+                            <div className="flex flex-wrap justify-start items-center gap-4 mt-3">
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                    <span className="probox-icon">
+                                        <img decoding="async" src="https://tplinsurance.com/storage/2023/07/06.webp" alt="icon" width={42} height={42} />
+                                    </span>
+                                    <h3 className="probox-heading">Marine</h3>
+                                </div>
+                                <div className="pro_IconBox flex flex-col items-center justify-center text-center bg-white rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                    <span className="probox-icon">
+                                        <img decoding="async" src="https://tplinsurance.com/storage/2023/07/07.webp" alt="icon" width={42} height={42} />
+                                    </span>
+                                    <h3 className="probox-heading">Engineering</h3>
+                                </div>
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                    <span className="probox-icon">
+                                        <img decoding="async" src="https://tplinsurance.com/storage/2023/07/08.webp" alt="icon" width={42} height={42} />
+                                    </span>
+                                    <h3 className="probox-heading">Cyber-Risk</h3>
+                                </div>
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                    <span className="probox-icon">
+                                        <img decoding="async" src="https://tplinsurance.com/storage/2023/07/Terrorism.png" alt="icon" width={42} height={42} />
+                                    </span>
+                                    <h3 className="probox-heading">Miscellaneous</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid pt-16 pb-16 w-full h-auto bg-[#e9eceb] flex flex-col sm:flex-row flex-wrap justify-between items-center px-16">
-                    <div className="flex-1 flex flex-col items-center justify-center w-full sm:w-1/3 mb-4 sm:mb-0">
-                        <h3 className="text-3xl font-semibold text-[#F36D35]">
+                <div className="container-fluid boxContainer w-full h-auto bg-[#e9eceb] flex flex-col sm:flex-row flex-wrap items-center justify-between">
+                    <div className="flex-1 flex flex-col items-center  w-full sm:w-1/3 sm:mb-0">
+                        <h3 className="box-heading text-[#F36D35]">
                             <CountUp start={0} end={400} duration={3} separator="," />K
                         </h3>
-                        <p className="text-[#696E77]">Customers Served</p>
+                        <p className="box-para text-[#696E77]">Customers Served</p>
                     </div>
-                    <div className="flex-1 flex flex-col items-center justify-center w-full sm:w-1/3 mb-4 sm:mb-0">
-                        <h3 className="text-3xl font-semibold text-[#F36D35]">
+                    <div className="flex-1 flex flex-col items-center w-full sm:w-1/3 sm:mb-0">
+                        <h3 className="box-heading text-[#F36D35]">
                             AA
                         </h3>
-                        <p className="text-[#696E77]">PACRA Rating</p>
+                        <p className="box-para text-[#696E77]">PACRA Rating</p>
                     </div>
-                    <div className="flex-1 flex flex-col items-center justify-center w-full sm:w-1/3 mb-4 sm:mb-0">
-                        <h3 className="text-3xl font-semibold text-[#F36D35]">
+                    <div className="flex-1 flex flex-col items-center w-full sm:w-1/3 sm:mb-0">
+                        <h3 className="box-heading text-[#F36D35]">
                             <CountUp start={0} end={300} duration={3} />+
                         </h3>
-                        <p className="text-[#696E77]">Employees Nationwide</p>
+                        <p className="box-para text-[#696E77]">Employees Nationwide</p>
                     </div>
                 </div>
-                <div className="container-fluid">
-                    <div className="appSec flex flex-col md:flex-row justify-between items-center mt-6">
+                <div className="container-fluid appSec">
+                    <div className="flex flex-col md:flex-row justify-between items-center">
                         <div className="flex flex-col items-start justify-start w-full md:w-1/4 pl-4 mb-4 md:mb-0">
-                            <h2 className="text-[#F36D35]">
+                            <h2 className="headingApp text-[#F36D35]">
                                 Why TPL Insurance Mobile App?
                             </h2>
-                            <p>
+                            <p className="small">
                                 Earn reward points by paying premium timely and redeem them on TPL Insurance Market Place with exciting discounts.
                             </p>
                         </div>
@@ -150,47 +152,53 @@ const MainSection = () => {
                             <img className="w-full h-64 md:h-auto object-cover" decoding="async" src="https://tplinsurance.com/storage/2023/07/MOBILE-GIF.gif" alt="Auto" />
                         </div>
                         <div className="flex flex-col items-start justify-start w-full md:w-1/4 pl-4 mb-4 md:mb-0">
-                            <h2 className="text-[#F36D35]">
+                            <h2 className="headingApp text-[#F36D35]">
                                 Want to Earn?
                             </h2>
-                            <p>
+                            <p className="small">
                                 Invite friends and family through TPL Insurance Mobile App and earn reward point to get amazing discounts on renewals!
                             </p>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center space-x-4 pt-4">
-                        <a rel="nofollow noopener" href="https://play.google.com/store/apps/details?id=com.tpl.insuranceapp&hl=en&gl=US" target="_blank">
-                            <img className="w-full max-w-[200px] sm:max-w-[160px] md:max-w-[140px]" decoding="async" src="https://tplinsurance.com/storage/2023/07/playstore-updated.webp" alt="auto" />
+                    <div className="flex appCTA">
+                        <a className="appbtns" rel="nofollow noopener" href="https://play.google.com/store/apps/details?id=com.tpl.insuranceapp&hl=en&gl=US" target="_blank">
+                            <img className="max-w-full hover:rounded-3xl hover:drop-shadow-xl" decoding="async" src="https://tplinsurance.com/storage/2023/07/playstore-updated.webp" alt="auto" />
                         </a>
-                        <a rel="nofollow noopener" href="https://apps.apple.com/pk/app/tpl-insurance/id1375881463" target="_blank">
-                            <img className="w-full max-w-[200px] sm:max-w-[160px] md:max-w-[140px]" decoding="async" src="https://tplinsurance.com/storage/2023/07/appstore-updated.webp" alt="auto" />
+                        <a className="appbtns" rel="nofollow noopener" href="https://apps.apple.com/pk/app/tpl-insurance/id1375881463" target="_blank">
+                            <img className="max-w-full hover:rounded-3xl hover:drop-shadow-xl" decoding="async" src="https://tplinsurance.com/storage/2023/07/appstore-updated.webp" alt="auto" />
                         </a>
-                        <a rel="nofollow noopener" href="https://appgallery.huawei.com/app/C104476707" target="_blank">
-                            <img className="w-full max-w-[200px] sm:max-w-[160px] md:max-w-[140px]" decoding="async" src="https://tplinsurance.com/storage/2023/07/appgallery-updated.webp" alt="auto" />
+                        <a className="appbtns" rel="nofollow noopener" href="https://appgallery.huawei.com/app/C104476707" target="_blank">
+                            <img className="max-w-full hover:rounded-3xl hover:drop-shadow-xl" decoding="async" src="https://tplinsurance.com/storage/2023/07/appgallery-updated.webp" alt="auto" />
                         </a>
                     </div>
-                    <div className="container-fluid pt-16 pb-16 mb-16 postSec w-full h-auto bg-[#e9eceb]">
-                        <h2 className="text-center postH2 text-[#15233C] tracking-wide pb-3">Recent News & Update</h2>
-                        <div className="flex flex-wrap justify-center">
-                            <div className="p-3 bg-white m-2.5 text-left shadow-md rounded min-h-[250px] max-h-[350px] flex flex-col hover:border hover:border-[#f57920] w-full md:w-1/3 overflow-hidden">
-                                <h2 className="font-md text-xl pb-2.5">PawSurance: The Ultimate Protection for your Fur Babies</h2>
-                                <p>As pet parents, we understand that our fur babies are more than just animals—they are family. We go above and beyond to ensure their happiness and well-being, from feeding them the best food to giving them the love and attention they deserve. But what happens when your beloved pet faces unexpected accidents or illnesses? Veterinary… </p>
-
-                            </div>
-                            <div className="p-3 bg-white m-2.5 text-left shadow-md rounded min-h-[250px] max-h-[350px] flex flex-col hover:border hover:border-[#f57920] w-full md:w-1/3 overflow-hidden">
-                                <h2 className="font-md text-xl pb-2.5">TPL Insurance Limited and Regal Automobiles Forge Strategic Partnership for Innovative Solutions in Auto Sector</h2>
-                                <p>Signatories: Sohail Usman – Chairman, Regal Automobiles and Muhammad Aminuddin – CEO, TPL Insurance signed the agreement. Senior members from respective organizations were also present at the occasion. Standing From left to right: Shahrukh Zaib – Manager Finance, Regal Automobiles, Miftah-Ul-Huda – CFO, Regal Automobiles, Adeel Usman – Managing Director, Regal Automobiles, Talha H. Dawood… </p>
-
-                            </div>
-                            <div className="p-3 bg-white m-2.5 text-left shadow-md rounded min-h-[250px] max-h-[350px] flex flex-col hover:border hover:border-[#f57920] w-full md:w-1/3 overflow-hidden">
-                                <h2 className="font-md text-xl pb-2.5">The Area Yield Index Insurance (AYII) Payout Ceremony</h2>
-                                <p>The Area Yield Index Insurance (AYII) Payout Ceremony, a momentous event celebrating the approval and disbursement of successful crop claims, took center stage in Lahore on 8th December 2023. The event was hosted by TPL Insurance, where crop claim payouts of total PKR 17.5 Mn were made to The Bank of Punjab farmers of Pakpattan… </p>
-
-                            </div>
+                </div>
+                <div className="container-fluid postSec w-full h-auto bg-[#e9eceb]">
+                    <h2 className="text-center postH2 text-[#15233C]">Recent News & Update</h2>
+                    <div className="recentPosts">
+                        <div className="recentPostInner">
+                            <h2>PawSurance: The Ultimate Protection for your Fur Babies</h2>
+                            <p>As pet parents, we understand that our fur babies are more than just animals—they are family. We go above and beyond to ensure their happiness and well-being, from feeding them the best food to giving them the love and attention they deserve. But what happens when your beloved pet faces unexpected accidents or illnesses? Veterinary…
+                                <a className="more-link" href="https://tplinsurance.com/pawsurance-the-ultimate-protection-for-your-fur-babies/">Continue reading</a>
+                            </p>
+                            <a className="read-more" href="https://tplinsurance.com/pawsurance-the-ultimate-protection-for-your-fur-babies/" target="_blank">Read More</a>
+                        </div>
+                        <div className="recentPostInner">
+                            <h2>TPL Insurance Limited and Regal Automobiles Forge Strategic Partnership for Innovative Solutions in Auto Sector</h2>
+                            <p>Signatories: Sohail Usman – Chairman, Regal Automobiles and Muhammad Aminuddin – CEO, TPL Insurance signed the agreement. Senior members from respective organizations were also present at the occasion. Standing From left to right: Shahrukh Zaib – Manager Finance, Regal Automobiles, Miftah-Ul-Huda – CFO, Regal Automobiles, Adeel Usman – Managing Director, Regal Automobiles, Talha H. Dawood…
+                                <a className="more-link" href="https://tplinsurance.com/tpl-insurance-limited-and-regal-automobiles-forge-strategic-partnership-for-innovative-solutions-in-auto-sector/">Continue reading</a>
+                            </p>
+                            <a className="read-more" href="https://tplinsurance.com/tpl-insurance-limited-and-regal-automobiles-forge-strategic-partnership-for-innovative-solutions-in-auto-sector/" target="_blank">Read More</a>
+                        </div>
+                        <div className="recentPostInner">
+                            <h2>The Area Yield Index Insurance (AYII) Payout Ceremony</h2>
+                            <p>The Area Yield Index Insurance (AYII) Payout Ceremony, a momentous event celebrating the approval and disbursement of successful crop claims, took center stage in Lahore on 8th December 2023. The event was hosted by TPL Insurance, where crop claim payouts of total PKR 17.5 Mn were made to The Bank of Punjab farmers of Pakpattan…
+                                <a className="more-link" href="https://tplinsurance.com/the-area-yield-index-insurance-ayii-payout-ceremony/">Continue reading</a>
+                            </p>
+                            <a className="read-more" href="https://tplinsurance.com/the-area-yield-index-insurance-ayii-payout-ceremony/" target="_blank">Read More</a>
                         </div>
                     </div>
-                    <Footer />
                 </div>
+                <Footer />
             </div>
         </div>
     );

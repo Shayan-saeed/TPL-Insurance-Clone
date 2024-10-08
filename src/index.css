@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden!important;
+  overflow-y: hidden;
 }
 
 code {
@@ -23,7 +24,7 @@ code {
   
 .herocontainer {
   background-image: url("./images/banner.png");
-  background-size: cover;
+  background-size: contain;
   box-sizing: border-box;
   background-repeat: no-repeat;
   width: 100%;
@@ -44,7 +45,9 @@ code {
   color: #f57920 !important;
 }
 .herofont {
-  font-weight: 1000;
+  font-weight: 800 !important;
+  font-size: 48px;
+  margin-top: 10px;
 }
 
 .heroAnimateText{
@@ -57,16 +60,22 @@ code {
   background: white;
   border: 1px solid rgb(68 68 68 / 34%);
   margin-top: 10px;
-  padding: 30px 70px !important;
+  width: 200px;
+  height: 122px;
   border-radius: 8px;
   box-shadow: 0 0.5em 0.5em -0.4em rgb(68 68 68 / 34%);
   transition: 0.5s;
 }
 
+.pro_IconBox:hover{
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
 .container-fluid{
   padding-right: 0 !important;
   padding-left: 0 !important;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .nav-container{
@@ -74,14 +83,10 @@ code {
   padding: 0.5rem 4rem !important;
 }
 
-/* .appSec  {
-  padding-right: 5rem !important;
-  padding-left: 5rem !important;
-} */
-
 .postH2 {
-  font-weight: 600 !important;
   font-size: 32px !important;
+  font-weight: 500;
+  padding-bottom: 12px !important;
 }
 
 .btn-outline {
@@ -101,20 +106,119 @@ code {
   appearance: none;
 }
 
-.footerLower{
+.footer{
   background-image: url("./images/footer.jpg");
   background-size: cover;
   box-sizing: border-box;
+  margin-top: 0px !important;
+  padding: 0px;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
-.fLower{
-  margin-left: 10%;
-  margin-right: 10%;
+.appCTA-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.social{
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.social a{
+  color: #fff;
+  border: 1px solid #ec6d21;
+  background: #ec6d21;
+  width: 30px !important;
+  height: 30px !important;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+.social a:hover{
+  background-color: #fff;
+  color: #ec6d21;
+  border: 1px solid #ec6d21;
+  border-radius: 5px;
+}
+
+.upperFooter{
+  background-color: #f47a22;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 52px !important;
+  padding-bottom: 18px !important;
+  flex-direction: column;
+}
+
+.upperFooter h2{
+  font-size: 24px !important;
+  /* margin-bottom: 20px; */
+  line-height: 32px !important;
+  color: #fff !important;
+  margin-top: 20px !important;
+}
+
+.footerSec{
+  padding-top: 25px ;
+  margin: 10px 50px auto !important;
+}
+
+.firstCol{
+  flex: 0 0 auto;
+  width: 33.33333%;
+}
+.secondCol{
+  flex: 0 0 auto;
+  width: 33.33333%;
+  padding-top: 25px;
+}
+.thirdCol{
+  flex: 0 0 auto;
+  width: 33.33333%;
+  padding-top: 25px;
+}
+
+.firstCol a.appbtns{
+  width: 50%;
+  display: inline-flex;
+}
+
+.quickmenu-col{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.quick1{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quick2{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .firstCol p.small{
+  color: #444 !important;
+  font-size: 16px;
+  margin-top: 10px;
+} */
 
 .sticky-button {
   position: fixed;
-  top: 99px;
+  top: 18%;
   right: 1px; 
   padding: 5px 10px;
   font-size: small;
@@ -166,19 +270,143 @@ code {
   font-size: 15px !important;
 }
 
-.input-group{
-  position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    width: 100%;
-}
-
 .form-control{
   position: relative;
-    flex: 1 1 auto;
-    width: 1%;
-    min-width: 0;
-    border-radius: 10px !important;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 195px;
+  border-radius: 10px !important;
+  padding-top: 2px !important;
+  padding-bottom: 0 !important;
+  padding-inline-start: 4px !important;
 }
 
+
+.hero{
+  padding-block-start: 13%;
+}
+
+.heroHeader{
+  font-size: 32px !important;
+}
+
+.probox-heading{
+  font-size: 20px !important;
+  padding-top: 14px !important;
+}
+
+.box-heading{
+  font-size: 36px !important;
+  font-weight: 600 !important;
+  padding: 0px !important;
+}
+
+.boxContainer{
+  padding-top: 72px !important;
+  padding-bottom: 72px !important;
+  margin-top: 5rem !important;
+  padding-inline: 5rem !important;
+}
+
+.box-para{
+  font-size: 16px !important;
+  text-align: center !important;
+}
+
+.appSec{
+  padding-top: 72px !important;
+  padding-bottom: 72px !important;
+  padding-inline: 6rem !important;
+}
+
+.headingApp{
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  margin-bottom: 8px !important;
+  padding-bottom: 12px !important;
+}
+
+.small{
+  line-height: 22px !important;
+  margin-bottom: 16px !important;
+  font-size: 1.1rem !important;
+}
+
+.appbtns{
+  padding: 20px 10px !important;
+}
+
+.appCTA{
+  padding: 0px 65px !important;
+  width: 50%;
+  margin: auto;
+}
+
+.postSec{
+  z-index: 19999999;
+  margin-bottom: 100px !important;
+  padding-top: 54px !important;
+  padding-bottom: 64px !important;
+  text-align: center !important;
+  padding-inline: 6rem !important;
+}
+
+.recentPosts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recentPostInner{
+  padding: 12px;
+  background: white;
+  margin: 10px;
+  text-align: left;
+  box-shadow: 0px 0px 10px rgb(68 68 68 / 38%);
+  border-radius: 4px;
+  min-height: 250px;
+  max-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recentPostInner:hover{
+  box-shadow: 0px 0px 3px rgb(245 121 32);
+  border-radius: 8px ;
+}
+
+.recentPostInner:hover a{
+  visibility: visible;
+  color: #f57920;
+  display: flex;
+  justify-content: flex-end;
+  transition-delay: 0.5s;
+}
+
+.recentPostInner a{
+  visibility: hidden;
+  float: right;
+  font-size: 16px !important;
+}
+.recentPostInner h2{
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+
+.recentPostInner p{
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+/* .read-more{
+  font-size: 16px !important;
+  float: right;
+  visibility: hidden;
+} */
+
+/* .more-link{
+  font-size: 16px !important;
+  float: right;
+  visibility: hidden;
+} */

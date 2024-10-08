@@ -7,7 +7,7 @@ import MainSection from './components/MainSection';
 
 function App() {
   return (
-    <div className='app'>
+    <div className='app overflow-y-auto scrollbar-thin'>
       <header className="App-header">
         <Navbar />
       </header>
