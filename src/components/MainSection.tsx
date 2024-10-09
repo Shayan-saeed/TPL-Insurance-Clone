@@ -1,6 +1,7 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import CountUp from 'react-countup';
 import Footer from "./Footer";
+import Navbar from './Navbar';
 const MainSection = () => {
     const [text] = useTypewriter({
         words: ['MARINE', 'MOBILE', 'AUTO'],
@@ -10,7 +11,8 @@ const MainSection = () => {
         delaySpeed: 90
     })
     return (
-        <div className="container-fluid h-screen herocontainer">
+        <div className="container-fluid h-screen board">
+            <Navbar />
             <button className="sticky-button"><i className="bi bi-pencil-square pr-2"></i>Get a Quote</button>
             <button className="sticky-whatsapp !rounded-full">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -18,8 +20,8 @@ const MainSection = () => {
                 </svg>
             </button>
             <div className="h-100">
-                <div className="flex flex-col h-full align-items-center text-center hero">
-                    <div className="w-full">
+                <div className="flex flex-col align-items-center text-center herocontainer">
+                    <div className="w-full headerContent">
                         <h3 className="heroHeader">EVERYTHING COMES WITH A RISK,</h3>
                         <h3 className="heroHeader"><strong>THAT'S WHY WE ARE HERE TO</strong></h3>
                         <h2 className="herofont">
@@ -28,7 +30,7 @@ const MainSection = () => {
                         <a className="btn btn-primary btn_getinsu" href="#">Get Insured</a>
                     </div>
                 </div>
-                <div className="containter-fluid w-full h-auto pt-16">
+                <div className="containter-fluid secContainer w-full h-auto pt-16">
                     <h4 className="text-center text-2xl font-bold text-[#15233C]">Pakistan's Leading Insurtech</h4>
                     <p className="text-center text-lg text-[#696E77] tracking-normal">
                         We protect your assets by capitalizing on cutting-edge technology, backed by
@@ -40,19 +42,19 @@ const MainSection = () => {
                                 <h3 className="">Digital Products</h3>
                             </div>
                             <div className="flex flex-wrap items-center gap-4 mt-1 w-full">
-                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full sm:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/01.webp" alt="icon" width={42} height={42} />
-                                    </span>
+                                    </span> 
                                     <h3 className="probox-heading">Auto</h3>
                                 </div>
-                                <div className="pro_IconBox flex flex-col items-center justify-center text-center bg-white rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                <div className="pro_IconBox flex flex-col items-center justify-center text-center bg-white rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full sm:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/02.webp" alt="icon" width={42} height={42} />
                                     </span>
                                     <h3 className="probox-heading">Travel</h3>
                                 </div>
-                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full sm:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/03.webp" alt="icon" width={42} height={42} />
                                     </span>
@@ -64,25 +66,25 @@ const MainSection = () => {
                             </div>
                             <div className="text-lg mb-1 text-[#a5a1a1]" style={{ marginTop: "2rem" }}>Other Products</div>
                             <div className="flex flex-wrap justify-start items-center gap-4 mt-1">
-                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full sm:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/04.webp" alt="icon" width={42} height={42} />
                                     </span>
                                     <h3 className="probox-heading">Health</h3>
                                 </div>
-                                <div className="pro_IconBox flex flex-col items-center justify-center text-center bg-white rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                <div className="pro_IconBox flex flex-col items-center justify-center text-center bg-white rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full sm:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/05.webp" alt="icon" width={42} height={42} />
                                     </span>
                                     <h3 className="probox-heading">Property</h3>
                                 </div>
-                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full sm:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/Bikeicon.png" alt="icon" width={42} height={42} />
                                     </span>
                                     <h3 className="probox-heading">Bike</h3>
                                 </div>
-                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full sm:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/09.webp" alt="icon" width={42} height={42} />
                                     </span>
@@ -90,25 +92,25 @@ const MainSection = () => {
                                 </div>
                             </div>
                             <div className="flex flex-wrap justify-start items-center gap-4 mt-3">
-                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full sm:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/06.webp" alt="icon" width={42} height={42} />
                                     </span>
                                     <h3 className="probox-heading">Marine</h3>
                                 </div>
-                                <div className="pro_IconBox flex flex-col items-center justify-center text-center bg-white rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                <div className="pro_IconBox flex flex-col items-center justify-center text-center bg-white rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full sm:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/07.webp" alt="icon" width={42} height={42} />
                                     </span>
                                     <h3 className="probox-heading">Engineering</h3>
                                 </div>
-                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full sm:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/08.webp" alt="icon" width={42} height={42} />
                                     </span>
                                     <h3 className="probox-heading">Cyber-Risk</h3>
                                 </div>
-                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21]">
+                                <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full sm:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/Terrorism.png" alt="icon" width={42} height={42} />
                                     </span>
@@ -119,19 +121,19 @@ const MainSection = () => {
                     </div>
                 </div>
                 <div className="container-fluid boxContainer w-full h-auto bg-[#e9eceb] flex flex-col sm:flex-row flex-wrap items-center justify-between">
-                    <div className="flex-1 flex flex-col items-center  w-full sm:w-1/3 sm:mb-0">
+                    <div className="flex-1 flex flex-col items-center  w-full sm:w-1/3 sm:mb-0 mb-4">
                         <h3 className="box-heading text-[#F36D35]">
-                            <CountUp start={0} end={400} duration={3} separator="," />K
+                            <CountUp start={0} end={400} duration={3} separator="," />K+
                         </h3>
                         <p className="box-para text-[#696E77]">Customers Served</p>
                     </div>
-                    <div className="flex-1 flex flex-col items-center w-full sm:w-1/3 sm:mb-0">
+                    <div className="flex-1 flex flex-col items-center w-full sm:w-1/3 sm:mb-0 mb-4">
                         <h3 className="box-heading text-[#F36D35]">
                             AA
                         </h3>
                         <p className="box-para text-[#696E77]">PACRA Rating</p>
                     </div>
-                    <div className="flex-1 flex flex-col items-center w-full sm:w-1/3 sm:mb-0">
+                    <div className="flex-1 flex flex-col items-center w-full sm:w-1/3 sm:mb-0 mb-4">
                         <h3 className="box-heading text-[#F36D35]">
                             <CountUp start={0} end={300} duration={3} />+
                         </h3>
@@ -139,8 +141,8 @@ const MainSection = () => {
                     </div>
                 </div>
                 <div className="container-fluid appSec">
-                    <div className="flex flex-col md:flex-row justify-between items-center">
-                        <div className="flex flex-col items-start justify-start w-full md:w-1/4 pl-4 mb-4 md:mb-0">
+                    <div className="flex flex-col lg:flex-row justify-between items-center">
+                        <div className="flex flex-col items-start justify-start w-full lg:w-1/4 pl-4 mb-4 lg:mb-0">
                             <h2 className="headingApp text-[#F36D35]">
                                 Why TPL Insurance Mobile App?
                             </h2>
@@ -148,10 +150,10 @@ const MainSection = () => {
                                 Earn reward points by paying premium timely and redeem them on TPL Insurance Market Place with exciting discounts.
                             </p>
                         </div>
-                        <div className="flex w-full md:w-2/4 px-4 mb-4 md:mb-0">
-                            <img className="w-full h-64 md:h-auto object-cover" decoding="async" src="https://tplinsurance.com/storage/2023/07/MOBILE-GIF.gif" alt="Auto" />
+                        <div className="flex w-full lg:w-2/4 px-4 mb-4 lg:mb-0">
+                            <img className="w-full h-64 md:h-auto" decoding="async" src="https://tplinsurance.com/storage/2023/07/MOBILE-GIF.gif" alt="Auto" />
                         </div>
-                        <div className="flex flex-col items-start justify-start w-full md:w-1/4 pl-4 mb-4 md:mb-0">
+                        <div className="flex flex-col items-start justify-start w-full lg:w-1/4 pl-4 mb-4 lg:mb-0">
                             <h2 className="headingApp text-[#F36D35]">
                                 Want to Earn?
                             </h2>
@@ -160,36 +162,36 @@ const MainSection = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="flex appCTA">
+                    <div className="flex appCTA items-center justify-center">
                         <a className="appbtns" rel="nofollow noopener" href="https://play.google.com/store/apps/details?id=com.tpl.insuranceapp&hl=en&gl=US" target="_blank">
-                            <img className="max-w-full hover:rounded-3xl hover:drop-shadow-xl" decoding="async" src="https://tplinsurance.com/storage/2023/07/playstore-updated.webp" alt="auto" />
+                            <img className="hover:rounded-3xl hover:drop-shadow-xl" decoding="async" src="https://tplinsurance.com/storage/2023/07/playstore-updated.webp" alt="auto" />
                         </a>
                         <a className="appbtns" rel="nofollow noopener" href="https://apps.apple.com/pk/app/tpl-insurance/id1375881463" target="_blank">
-                            <img className="max-w-full hover:rounded-3xl hover:drop-shadow-xl" decoding="async" src="https://tplinsurance.com/storage/2023/07/appstore-updated.webp" alt="auto" />
+                            <img className="hover:rounded-3xl hover:drop-shadow-xl" decoding="async" src="https://tplinsurance.com/storage/2023/07/appstore-updated.webp" alt="auto" />
                         </a>
                         <a className="appbtns" rel="nofollow noopener" href="https://appgallery.huawei.com/app/C104476707" target="_blank">
-                            <img className="max-w-full hover:rounded-3xl hover:drop-shadow-xl" decoding="async" src="https://tplinsurance.com/storage/2023/07/appgallery-updated.webp" alt="auto" />
+                            <img className="hover:rounded-3xl hover:drop-shadow-xl" decoding="async" src="https://tplinsurance.com/storage/2023/07/appgallery-updated.webp" alt="auto" />
                         </a>
                     </div>
                 </div>
                 <div className="container-fluid postSec w-full h-auto bg-[#e9eceb]">
                     <h2 className="text-center postH2 text-[#15233C]">Recent News & Update</h2>
-                    <div className="recentPosts">
-                        <div className="recentPostInner">
+                    <div className="recentPosts flex flex-wrap justify-center">
+                        <div className="recentPostInner sm:w-full md:w-[48%] lg:w-[30%] overflow-hidden">
                             <h2>PawSurance: The Ultimate Protection for your Fur Babies</h2>
                             <p>As pet parents, we understand that our fur babies are more than just animals—they are family. We go above and beyond to ensure their happiness and well-being, from feeding them the best food to giving them the love and attention they deserve. But what happens when your beloved pet faces unexpected accidents or illnesses? Veterinary…
                                 <a className="more-link" href="https://tplinsurance.com/pawsurance-the-ultimate-protection-for-your-fur-babies/">Continue reading</a>
                             </p>
                             <a className="read-more" href="https://tplinsurance.com/pawsurance-the-ultimate-protection-for-your-fur-babies/" target="_blank">Read More</a>
                         </div>
-                        <div className="recentPostInner">
+                        <div className="recentPostInner sm:w-full md:w-[48%] lg:w-[30%] overflow-hidden">
                             <h2>TPL Insurance Limited and Regal Automobiles Forge Strategic Partnership for Innovative Solutions in Auto Sector</h2>
                             <p>Signatories: Sohail Usman – Chairman, Regal Automobiles and Muhammad Aminuddin – CEO, TPL Insurance signed the agreement. Senior members from respective organizations were also present at the occasion. Standing From left to right: Shahrukh Zaib – Manager Finance, Regal Automobiles, Miftah-Ul-Huda – CFO, Regal Automobiles, Adeel Usman – Managing Director, Regal Automobiles, Talha H. Dawood…
                                 <a className="more-link" href="https://tplinsurance.com/tpl-insurance-limited-and-regal-automobiles-forge-strategic-partnership-for-innovative-solutions-in-auto-sector/">Continue reading</a>
                             </p>
                             <a className="read-more" href="https://tplinsurance.com/tpl-insurance-limited-and-regal-automobiles-forge-strategic-partnership-for-innovative-solutions-in-auto-sector/" target="_blank">Read More</a>
                         </div>
-                        <div className="recentPostInner">
+                        <div className="recentPostInner sm:w-full md:w-[48%] lg:w-[30%] overflow-hidden">
                             <h2>The Area Yield Index Insurance (AYII) Payout Ceremony</h2>
                             <p>The Area Yield Index Insurance (AYII) Payout Ceremony, a momentous event celebrating the approval and disbursement of successful crop claims, took center stage in Lahore on 8th December 2023. The event was hosted by TPL Insurance, where crop claim payouts of total PKR 17.5 Mn were made to The Bank of Punjab farmers of Pakpattan…
                                 <a className="more-link" href="https://tplinsurance.com/the-area-yield-index-insurance-ayii-payout-ceremony/">Continue reading</a>

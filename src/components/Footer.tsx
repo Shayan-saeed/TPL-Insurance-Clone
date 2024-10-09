@@ -3,17 +3,17 @@ const Footer = () => {
         <div className="container-fluid pb-16 footer">
             <div className="upperFooter">
                 <h2>Want to know more?</h2>
-                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 pt-4">
+                <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 pt-4">
                     <input className="rounded-sm px-4 py-2 outline-none w-full md:w-auto" type="text" placeholder="Your Name" />
                     <input className="rounded-sm px-4 py-2 outline-none w-full md:w-auto" type="tel" minLength={11} maxLength={14} placeholder="Your Phone" />
                     <input className="rounded-sm px-4 py-2 outline-none w-full md:w-auto" type="email" placeholder="Your Email" />
-                    <button type="submit" className="btn-outline ml-4 rounded-xl px-16 w-full md:w-auto">Get Contacted</button>
+                    <button type="submit" className="btn-outline rounded-xl px-16 w-full md:w-auto">Get Contacted</button>
                 </div>
             </div>
             <div className="container lowerFooter">
                 <div className="footerSec">
-                    <div className="upper flex space-x-4">
-                        <div className="flex flex-col firstCol">
+                    <div className="upper flex flex-col lg:flex-row space-x-0 lg:space-x-4">
+                        <div className="flex flex-col firstCol mb-4 lg:mb-0">
                             <a href="#" className="appbtns">
                                 <img src="https://tplinsurance.com/storage/2023/07/TPL-insurance-logo-updatenew.webp" alt="TPL Insurance Logo" width="100%" height="auto" />
                             </a>
@@ -22,7 +22,7 @@ const Footer = () => {
                                 <a href="https://tplinsurance.com/about-us/" className="hover:text-[#ec6d21]"> Read More</a>
                             </p>
                         </div>
-                        <div className="flex flex-col secondCol">
+                        <div className="flex flex-col secondCol mb-4 md:mb-0">
                             <h2 className="headingApp text-[#F36D35]">Quick Links</h2>
                             <div className="quickmenu-col">
                                 <div className="quick1">
@@ -40,7 +40,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col thirdCol justify-center items-center">
+                        <div className="flex flex-col thirdCol justify-center items-center mb-4 md:mb-0">
                             <span className="appCTA-footer">
                                 <img src="https://tplinsurance.com/storage/2023/07/Download-TPLI-APP.png" width={150} height="auto" alt="" />
                             </span>
@@ -75,7 +75,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center justify-between border-t border-gray-200 mt-3 pt-4">
+                    <div className="flex items-center justify-between border-t border-gray-200 mt-3 pt-4 pb-4">
                         <div className="text-gray-400 text-sm">
                             © TPL Insurance Ltd. , All Right Reserved.
                         </div>
