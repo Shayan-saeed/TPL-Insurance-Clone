@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Navbar from './Navbar';
 const MainSection = () => {
     const [text] = useTypewriter({
-        words: ['MARINE', 'MOBILE', 'AUTO','HOME','TRAVEL','PROPERTY','HEALTH'],
+        words: ['MARINE', 'MOBILE', 'AUTO', 'HOME', 'TRAVEL', 'PROPERTY', 'HEALTH'],
         loop: true,
         typeSpeed: 300,
         deleteSpeed: 120,
@@ -20,13 +20,17 @@ const MainSection = () => {
             </button>
             <div className="h-100">
                 <div className="herocontainer">
-                    <div className="w-full headerContent text-center">
-                        <h3 className="heroHeader">EVERYTHING COMES WITH A RISK,</h3>
-                        <h3 className="heroHeader"><strong>THAT'S WHY WE ARE HERE TO</strong></h3>
-                        <h2 className="herofont">
-                            INSURE YOUR <span className="block sm:inline text-[#f57920] heroAnimateText">{text}<Cursor cursorStyle='|' /></span>
-                        </h2>
-                        <a className="btn btn-primary btn_getinsu" href="#">Get Insured</a>
+                    <div style={{position: "absolute", top: "160px", left: "0", right: "0"}}>
+                        <div style={{display: "flex", justifyContent: "center", alignItems:'center'}}>
+                            <div className="w-full headerContent text-center">
+                                <h3 className="heroHeader">EVERYTHING COMES WITH A RISK,</h3>
+                                <h3 className="heroHeader"><strong>THAT'S WHY WE ARE HERE TO</strong></h3>
+                                <h2 className="herofont">
+                                    INSURE YOUR <span className="block sm:inline text-[#f57920] heroAnimateText">{text}<Cursor cursorStyle='|' /></span>
+                                </h2>
+                                <a className="btn btn-primary btn_getinsu" href="#">Get Insured</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="containter-fluid secContainer w-full h-auto !pt-16">
@@ -44,7 +48,7 @@ const MainSection = () => {
                                 <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full md:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/01.webp" alt="icon" width={42} height={42} />
-                                    </span> 
+                                    </span>
                                     <h3 className="probox-heading">Auto</h3>
                                 </div>
                                 <div className="pro_IconBox flex flex-col items-center justify-center text-center bg-white rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full md:w-[200px]">
