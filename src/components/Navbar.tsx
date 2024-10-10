@@ -70,7 +70,7 @@ const NavbarComponent: React.FC = () => {
                         </li>
                         <li className="nav-item">
                             <form className="d-flex" role="search" action="https://tplinsurance.com/">
-                                <div className="input-group text-[#696E77] rounded-lg p-1">
+                                <div className="input-group flex text-[#696E77] rounded-lg p-1">
                                     <input className="form-control text-sm placeholder:text-[#696E77]" type="text" placeholder="Search here..." />
                                     <button className="btn text-[#f57920]" type="submit">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">

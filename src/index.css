@@ -287,15 +287,21 @@ code {
   margin-right: 0 !important;
 }
 
+@media (min-width: 732px) and (max-width: 768px ) {
+  .navbar-toggler{
+    padding-left: 50px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .herocontainer{
     background-image: url("./images/mobileBanner.jpg") !important;
     background-size: cover !important;
   }
 
-  .navbar-toggler{
-    padding-left: 45px !important;
-  }
+  /* .navbar-toggler{
+    padding-left: 50px !important;
+  } */
 
   .navbar-toggler:focus, .navbar-toggler:active {
     outline: none; /* Removes the outline */
