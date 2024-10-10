@@ -26,30 +26,58 @@ code {
   -webkit-animation-timing-function:linear;
 }
 
-@media (min-width: 2100px) {
-  .headerContent{
-    margin-top: 15% ;
+@media (max-width: 1325px) {
+  .footerInput{
+    min-width: 250px !important;
   }
 }
 
-@media (min-width: 1900px) and (max-width: 2100px) {
-  .headerContent{
-    margin-top: 15%;
+@media (max-width: 1120px) {
+  .footerInput{
+    min-width: 220px !important;
   }
 }
 
-@media (min-width: 1500px) and (max-width: 1899px) {
-  .headerContent{
-    margin-top: 20%;
+@media (max-width: 1026px) {
+  .footerInput{
+    width: 450px !important;
+    padding-inline: 20px !important;
   }
 
+  .firstCol{
+    width: 100% !important;
+    padding-inline: 1rem !important;
+  }
+
+  .secondCol{
+    width: 100% !important;
+    padding-inline: 1rem !important;
+  }
+
+  .thirdCol{
+    width: 100% !important;
+    padding-inline: 1rem !important;
+  }
+
+  .lastRowFooter{
+    padding-inline: 1rem !important;
+  }
+
+  
 }
 
-@media (min-width: 1200px) and (max-width: 1499px) {
-  .headerContent{
-    margin-top: 25%;
+@media (max-width: 500px) {
+  .footerInput{
+    width: 400px !important;
+    padding-inline: 20px !important;
   }
+}
 
+@media (max-width: 420px) {
+  .footerInput{
+    width: 300px !important;
+    padding-inline: 20px !important;
+  }
 }
 
 @media (min-width: 1026px) and (max-width: 1500px) {
@@ -58,23 +86,8 @@ code {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .headerContent{
-    margin-top: 30%;
-  }
-}
-
-@media (max-width: 768px) {
-  .headerContent{
-    margin-top: 45%;
-  }
-}
-
 
 @media (min-width: 1024px)  {
-    .footerSec{
-      margin: 10px 50px auto !important;
-    }
 
     .secContainer{
       padding: 0.5rem 6rem;
@@ -136,16 +149,11 @@ code {
 @media (max-width: 1024px) {
 
   .secContainer {
-    padding: 0.5rem 3rem;
+    padding: 2rem 3rem;
   }
 
   .navbar-brand img{
     width: 60%;
-  }
-
-  .firstCol, .secondCol, .thirdCol {
-    width: 100% !important; 
-    padding-top: 10px;
   }
 
   .heroHeader {
@@ -154,10 +162,6 @@ code {
 
   .pro_IconBox {
     height: 100px; 
-  }
-
-  .appbtns img{
-    min-width: 150px;
   }
 
   .nav-container{
@@ -191,21 +195,42 @@ code {
     max-height: 300px;
   }
 
-  .appbtns img{
-    max-width: 150px;
-  }
-
   .nav-container{
     margin-top: 0.1rem !important;
     display: flex;
     flex-wrap: inherit !important;
   }
+
+  .secContainer{
+    padding: 0 !important;
+    padding-top: 2rem !important;
+  }
+
+  .secContainerHeader{
+    padding-top: 4rem !important;
+    padding-inline: 35px !important;
+  }
+
+  .secContainerPara{
+    padding-inline: 35px !important;
+  }
+
+  .secContainerInner{
+    min-width: 100% !important;
+  }
+
+  .secContainerBoxes{
+    min-width: 100% !important;
+    padding-inline: 35px !important;
+  }
+
+  .thirdContainerBoxes{
+    margin-bottom: 2.5rem !important;
+  }
+
 }
 
 @media (max-width: 480px) {
-  .footerSec{
-    margin: 0px 0px !important;
-  }
 
   .probox-heading {
     font-size: 16px !important;
@@ -219,13 +244,13 @@ code {
     padding: 0px 20px;
   }
 
-  .appbtns img{
-    max-width: 100px;
-  }
-
   .nav-container{
     margin-top: 0.1rem !important;
     padding-inline: 5px !important;
+  }
+
+  .appbtns img{
+    min-width: 80px;
   }
 
 }
@@ -243,14 +268,21 @@ code {
   box-sizing: border-box;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 @media (max-width: 768px) {
   .herocontainer {
     background-size: cover; 
     height: auto; 
+    min-height: 100vh;
   }
 
   .herofont {
@@ -261,7 +293,7 @@ code {
   }
 
   .heroAnimateText{
-    font-size: 48px !important;
+    font-size: 26px !important;
     letter-spacing:2px !important;
     text-shadow: 3px 0;
   }
@@ -279,12 +311,6 @@ code {
     top: 70% !important;
     right: 10px !important;
 
-  }
-}
-
-@media (min-width: 350px) and (max-width: 600px) {
-  .headerContent{
-    margin-top: 65% !important;
   }
 }
 
@@ -428,11 +454,6 @@ code {
   margin-top: 20px !important;
 }
 
-.footerSec{
-  padding-top: 25px ;
-  /* margin: 10px 50px auto !important; */
-}
-
 .firstCol{
   flex: 0 0 auto;
   width: 33.33333%;
@@ -451,6 +472,8 @@ code {
 .firstCol a.appbtns{
   width: 50%;
   display: inline-flex;
+  padding-block: 20px !important;
+  padding-inline: 0px !important;
 }
 
 .quickmenu-col{
@@ -463,19 +486,15 @@ code {
   width: 60%;
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .quick2{
   width: 40%;
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
-
-/* .firstCol p.small{
-  color: #444 !important;
-  font-size: 16px;
-  margin-top: 10px;
-} */
 
 .sticky-button {
   position: fixed;
@@ -590,9 +609,9 @@ code {
   font-size: 1.1rem !important;
 }
 
-.fLower2{
+/* .fLower2{
   padding-inline: 4rem;
-}
+} */
 
 .appbtns{
   padding: 20px 10px !important;
@@ -664,4 +683,26 @@ code {
 .recentPostInner p{
   font-size: 16px !important;
   font-weight: 400 !important;
+}
+
+.footerSec {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 2rem !important;
+}
+
+.fLower2_1{
+  flex: 0 0 auto;
+  padding: 25px 0;
+  font-size: 15px;
+  width: 33.3333%;
+}
+
+.fLower2_2{
+  display: flex;
+  justify-content: center;
+  width: 33.3333%;
+  flex: 0 0 auto;
+  gap: 2rem;
 }

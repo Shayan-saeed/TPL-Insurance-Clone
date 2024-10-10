@@ -3,11 +3,11 @@ const Footer = () => {
         <div className="container-fluid pb-16 footer">
             <div className="upperFooter">
                 <h2>Want to know more?</h2>
-                <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 pt-4">
-                    <input className="rounded-sm px-4 py-2 outline-none w-full md:w-auto" type="text" placeholder="Your Name" />
-                    <input className="rounded-sm px-4 py-2 outline-none w-full md:w-auto" type="tel" minLength={11} maxLength={14} placeholder="Your Phone" />
-                    <input className="rounded-sm px-4 py-2 outline-none w-full md:w-auto" type="email" placeholder="Your Email" />
-                    <button type="submit" className="btn-outline rounded-xl px-16 w-full md:w-auto">Get Contacted</button>
+                <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-6 pt-4">
+                    <input className="rounded-sm px-4 py-2 outline-none w-full md:w-auto h-11 footerInput" style={{ minWidth: '300px' }} type="text" placeholder="Your Name" />
+                    <input className="rounded-sm px-4 py-2 outline-none w-full md:w-auto h-11 footerInput" style={{ minWidth: '300px' }} type="tel" minLength={11} maxLength={14} placeholder="Your Phone" />
+                    <input className="rounded-sm px-4 py-2 outline-none w-full md:w-auto h-11 footerInput" style={{ minWidth: '300px' }} type="email" placeholder="Your Email" />
+                    <button type="submit" className="btn-outline rounded-xl px-16 w-full md:w-auto h-11 footerInput" style={{ minWidth: '300px' }}>Get Contacted</button>
                 </div>
             </div>
             <div className="container lowerFooter">
@@ -17,8 +17,8 @@ const Footer = () => {
                             <a href="#" className="appbtns">
                                 <img src="https://tplinsurance.com/storage/2023/07/TPL-insurance-logo-updatenew.webp" alt="TPL Insurance Logo" width="100%" height="auto" />
                             </a>
-                            <p className="text-md">
-                                TPL Insurance is the first insurance company in Pakistan to sell general insurance products directly to the consumer. Since launch in 2005, the company has grown from strength-to-strength, delivering superior and hassle-free Insurance products to individual and corporate clients. 
+                            <p className="text-md text-left text-balance">
+                                TPL Insurance is the first insurance company in Pakistan to sell general insurance products directly to the consumer. Since launch in 2005, the company has grown from strength-to-strength, delivering superior and hassle-free Insurance products to individual and corporate clients.
                                 <a href="https://tplinsurance.com/about-us/" className="hover:text-[#ec6d21]"> Read More</a>
                             </p>
                         </div>
@@ -63,19 +63,19 @@ const Footer = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="lower">
-                        <div className="fLower2 flex flex-col lg:flex-row items-center justify-between border-t border-gray-400 mt-3 pt-4 space-y-4">
+                    <div className="fLower2 flex flex-col lg:flex-row items-center justify-between border-t border-[#ddd] mt-3 space-y-4">
+                        <div className="fLower2_1">
                             <a href="https://jamapunji.pk/">
                                 <img src="https://tplinsurance.com/storage/2024/02/jamapunji_parkash_parmar.png" alt="auto" width={150} />
                             </a>
-                            <div className="flex gap-3">
-                                <a href="" className="text-sm font-semibold hover:text-[#F36D35]">Privacy Policy</a>
-                                <a href="" className="text-sm font-semibold hover:text-[#F36D35]">Quality Policy</a>
-                                <a href="" className="text-sm font-semibold hover:text-[#F36D35]">Signup</a>
-                            </div>
+                        </div>
+                        <div className="fLower2_2">
+                            <a href="" className="text-sm font-semibold hover:text-[#F36D35]">Privacy Policy</a>
+                            <a href="" className="text-sm font-semibold hover:text-[#F36D35]">Quality Policy</a>
+                            <a href="" className="text-sm font-semibold hover:text-[#F36D35]">Signup</a>
                         </div>
                     </div>
-                    <div className="flex items-center justify-between border-t border-gray-200 mt-3 pt-4 pb-4">
+                    <div className="flex items-center justify-between border-t border-gray-200 pt-3 pb-4 lastRowFooter">
                         <div className="text-gray-400 text-sm">
                             © TPL Insurance Ltd. , All Right Reserved.
                         </div>
