@@ -17,7 +17,7 @@ const Footer = () => {
                             <a href="#" className="appbtns">
                                 <img src="https://tplinsurance.com/storage/2023/07/TPL-insurance-logo-updatenew.webp" alt="TPL Insurance Logo" width="100%" height="auto" />
                             </a>
-                            <p className="text-md text-left text-balance">
+                            <p className="text-md text-left text-balance" style={{lineHeight: "22px"}}>
                                 TPL Insurance is the first insurance company in Pakistan to sell general insurance products directly to the consumer. Since launch in 2005, the company has grown from strength-to-strength, delivering superior and hassle-free Insurance products to individual and corporate clients.
                                 <a href="https://tplinsurance.com/about-us/" className="hover:text-[#ec6d21]"> Read More</a>
                             </p>
@@ -63,7 +63,7 @@ const Footer = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="fLower2 flex flex-col lg:flex-row items-center justify-between border-t border-[#ddd] mt-3 space-y-4">
+                    <div className="fLower2 flex flex-col lg:flex-row items-center justify-between border-t border-[#ddd] space-y-4">
                         <div className="fLower2_1">
                             <a href="https://jamapunji.pk/">
                                 <img src="https://tplinsurance.com/storage/2024/02/jamapunji_parkash_parmar.png" alt="auto" width={150} />

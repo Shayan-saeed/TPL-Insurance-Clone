@@ -40,7 +40,7 @@ const MainSection = () => {
                             <div className="text-lg mb-1 text-[#a5a1a1]">
                                 <h3 className="">Digital Products</h3>
                             </div>
-                            <div className="flex flex-wrap items-center gap-4 mt-1 w-full">
+                            <div className="flex flex-wrap items-center gap-1 md:!gap-6 mt-1 w-full">
                                 <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full md:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/01.webp" alt="icon" width={42} height={42} />
@@ -64,7 +64,7 @@ const MainSection = () => {
                             </div> */}
                             </div>
                             <div className="text-lg mb-1 text-[#a5a1a1]" style={{ marginTop: "2rem" }}>Other Products</div>
-                            <div className="flex flex-wrap justify-start items-center gap-4 mt-1">
+                            <div className="flex flex-wrap justify-start items-center gap-1 md:!gap-6 mt-1">
                                 <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full md:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/04.webp" alt="icon" width={42} height={42} />
@@ -90,7 +90,7 @@ const MainSection = () => {
                                     <h3 className="probox-heading">Mobile</h3>
                                 </div>
                             </div>
-                            <div className="flex flex-wrap justify-start items-center gap-4 mt-3">
+                            <div className="flex flex-wrap justify-start items-center gap-1 md:!gap-6 mt-3">
                                 <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full md:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/06.webp" alt="icon" width={42} height={42} />
@@ -150,7 +150,7 @@ const MainSection = () => {
                             </p>
                         </div>
                         <div className="flex w-full lg:w-2/4 px-4 mb-4 lg:mb-0">
-                            <img className="w-full h-64 md:h-auto" decoding="async" src="https://tplinsurance.com/storage/2023/07/MOBILE-GIF.gif" alt="Auto" />
+                            <img className="w-full md:h-auto" decoding="async" src="https://tplinsurance.com/storage/2023/07/MOBILE-GIF.gif" alt="Auto" />
                         </div>
                         <div className="flex flex-col items-start justify-start w-full lg:w-1/4 pl-4 mb-4 lg:mb-0">
                             <h2 className="headingApp text-[#F36D35]">
