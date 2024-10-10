@@ -80,7 +80,7 @@ const NavbarComponent: React.FC = () => {
                                 </div>
                             </form>
                         </li>
-                        <li className="nav-item flex items-center navButton text-center bg-[#f57920] hover:bg-white hover:border hover:border-[#f57920] hover:!text-[#f57920] mt-2.5 p-2.5 lg:mt-0 lg:p-0">
+                        <li style={{maxHeight: "44px"}} className="nav-item flex items-center navButton text-center bg-[#f57920] hover:bg-white hover:border hover:border-[#f57920] hover:!text-[#f57920] mt-2.5 p-2.5 lg:mt-0 lg:p-0">
                             <a href="https://tplinsurance.com/my-tpli/">My TPLI</a>
                         </li>
                     </ul>
