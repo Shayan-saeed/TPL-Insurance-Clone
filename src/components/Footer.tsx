@@ -63,7 +63,7 @@ const Footer = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="fLower2 flex flex-col lg:flex-row items-center justify-between border-t border-[#ddd] space-y-4">
+                    <div className="fLower2 flex flex-col lg:flex-row items-center justify-between border-t border-[#ddd]">
                         <div className="fLower2_1">
                             <a href="https://jamapunji.pk/">
                                 <img src="https://tplinsurance.com/storage/2024/02/jamapunji_parkash_parmar.png" alt="auto" width={150} />
