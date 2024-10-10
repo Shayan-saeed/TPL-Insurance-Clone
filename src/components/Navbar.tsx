@@ -14,7 +14,7 @@ const NavbarComponent: React.FC = () => {
                 <a className="navbar-brand" href="https://tplinsurance.com">
                     <img src="https://tplinsurance.com/storage/2023/07/TPL-insurance-logo-updatenew.webp" alt="TPL Insurance Logo" />
                 </a>
-                <button className="navbar-toggler lg:hidden" onClick={toggleMenu} aria-expanded={isOpen} aria-label="Toggle navigation">
+                <button className="navbar-toggler border-none lg:hidden" onClick={toggleMenu} aria-expanded={isOpen} aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
 

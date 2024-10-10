@@ -11,6 +11,7 @@ body {
   overflow-y: hidden;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -273,7 +274,7 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 22px !important;
+  /* margin-top: 22px !important; */
   margin-left: 0 !important;
   margin-right: 0 !important;
 }

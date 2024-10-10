@@ -72,7 +72,7 @@ const Footer = () => {
                         <div className="fLower2_2">
                             <a href="" className="text-sm font-semibold hover:text-[#F36D35]">Privacy Policy</a>
                             <a href="" className="text-sm font-semibold hover:text-[#F36D35]">Quality Policy</a>
-                            <a href="" className="text-sm font-semibold hover:text-[#F36D35]">Signup</a>
+                            <a href="" className="text-sm font-semibold hover:text-[#F36D35]">Sitemap</a>
                         </div>
                     </div>
                     <div className="flex items-center justify-between border-t border-gray-200 pt-3 pb-4 lastRowFooter">
