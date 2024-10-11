@@ -3,7 +3,7 @@ const Footer = () => {
         <div className="container-fluid pb-16 footer">
             <div className="upperFooter">
                 <h2>Want to know more?</h2>
-                <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-6 pt-4">
+                <div className="upperFooterInner flex flex-col gap-2 pt-4">
                     <input className="rounded-sm px-4 py-2 outline-none w-full md:w-auto h-11 footerInput" style={{ minWidth: '300px' }} type="text" placeholder="Your Name" />
                     <input className="rounded-sm px-4 py-2 outline-none w-full md:w-auto h-11 footerInput" style={{ minWidth: '300px' }} type="tel" minLength={11} maxLength={14} placeholder="Your Phone" />
                     <input className="rounded-sm px-4 py-2 outline-none w-full md:w-auto h-11 footerInput" style={{ minWidth: '300px' }} type="email" placeholder="Your Email" />
@@ -12,7 +12,7 @@ const Footer = () => {
             </div>
             <div className="container lowerFooter">
                 <div className="footerSec">
-                    <div className="upper flex flex-col lg:flex-row space-x-0 lg:space-x-4">
+                    <div className="upper flex flex-col  space-x-0 lg:space-x-4">
                         <div className="flex flex-col firstCol mb-4 lg:mb-0">
                             <a href="#" className="appbtns">
                                 <img src="https://tplinsurance.com/storage/2023/07/TPL-insurance-logo-updatenew.webp" alt="TPL Insurance Logo" width="100%" height="auto" />
