@@ -200,7 +200,6 @@ code {
 
   .recentPostInner {
     min-height: 200px;
-    max-height: 300px;
   }
 
   .nav-container{
@@ -693,7 +692,7 @@ code {
 }
 
 .appCTA{
-  padding: 0px 65px !important;
+  padding: 0px 20px !important;
 }
 
 .postSec{
@@ -725,7 +724,6 @@ code {
   box-shadow: 0px 0px 10px rgb(68, 68, 68 , 38%);
   border-radius: 4px;
   min-height: 250px;
-  max-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
