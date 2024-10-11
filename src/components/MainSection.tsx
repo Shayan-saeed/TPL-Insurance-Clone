@@ -94,7 +94,7 @@ const MainSection = () => {
                                     <h3 className="probox-heading">Mobile</h3>
                                 </div>
                             </div>
-                            <div className="flex flex-wrap justify-start items-center gap-1 md:!gap-6 mt-0 md:mt-3">
+                            <div className="flex flex-wrap justify-start items-center gap-1 md:!gap-6 mt-3">
                                 <div className="pro_IconBox flex flex-col items-center justify-center rounded-lg border hover:shadow-lg hover:!border-[#ec6d21] hover:!text-[#ec6d21] w-full md:w-[200px]">
                                     <span className="probox-icon">
                                         <img decoding="async" src="https://tplinsurance.com/storage/2023/07/06.webp" alt="icon" width={42} height={42} />

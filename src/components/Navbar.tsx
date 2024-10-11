@@ -3,9 +3,14 @@ import React, { useState } from 'react';
 const NavbarComponent: React.FC = () => {
 
     const [isOpen, setIsOpen] = useState(false);
+    const [showSearch, setShowSearch] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+    };
+
+    const toggleSearch = () => {
+        setShowSearch(!showSearch);
     };
 
     return (
@@ -68,7 +73,28 @@ const NavbarComponent: React.FC = () => {
                         <li className="nav-item">
                             <a className="nav-link text-[#696E77] hover:text-[#f57920]" href="https://tplinsurance.com/contact-us/">Contact</a>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item relative">
+                            <button className="btn text-[#f57920] hidden searchButton" onClick={toggleSearch}>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21L15.803 15.803A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                                </svg>
+                            </button>
+                            {showSearch && (
+                                <div className="absolute top-full right-0 w-full min-w-[200px] bg-white p-3 border border-gray-200 rounded-lg dropSearch hidden">
+                                    <form className="d-flex" role="search" action="https://tplinsurance.com/">
+                                        <div className="input-group flex text-[#696E77] rounded-lg p-1">
+                                            <input className="form-control text-sm placeholder:text-[#696E77]" type="text" placeholder="Search here..." />
+                                            <button className="btn text-[#f57920]" type="submit">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21L15.803 15.803A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            )}
+                        </li>
+                        <li className="nav-item hidden navForm">
                             <form className="d-flex" role="search" action="https://tplinsurance.com/">
                                 <div className="input-group flex text-[#696E77] rounded-lg p-1">
                                     <input className="form-control text-sm placeholder:text-[#696E77]" type="text" placeholder="Search here..." />
