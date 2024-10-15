@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 
-const NavbarComponent: React.FC = () => {
+interface NavbarProps{
+    isOpen: boolean,
+    toggleMenu: () => void ,
+}
 
-    const [isOpen, setIsOpen] = useState(false);
+const NavbarComponent: React.FC<NavbarProps> = ({isOpen, toggleMenu}) => {
+
     const [showSearch, setShowSearch] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+    
 
     const toggleSearch = () => {
         setShowSearch(!showSearch);
@@ -16,23 +18,23 @@ const NavbarComponent: React.FC = () => {
     return (
         <nav className="navbar fixed-top py-3 bg-white">
             <div className="container-fluid nav-container p-2 lg:p-3">
-                <a className="navbar-brand" href="https://tplinsurance.com">
+                <a className="navbar-brand outline-none" href="https://tplinsurance.com">
                     <img src="https://tplinsurance.com/storage/2023/07/TPL-insurance-logo-updatenew.webp" alt="TPL Insurance Logo" />
                 </a>
-                <button className="navbar-toggler border-none lg:hidden" onClick={toggleMenu} aria-expanded={isOpen} aria-label="Toggle navigation">
+                <button className="navbar-toggler border-none" onClick={toggleMenu} aria-expanded={isOpen} aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className={`navbar-collapse ${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:w-auto`} id="navbarResponsive">
-                    <ul className="navbar-nav ms-auto text-sm md:text-base lg:flex lg:!flex-row  md:space-x-6">
-                        <li className="nav-item">
+                <div className={`navbar-collapse ${isOpen ? 'block' : 'hidden'}`} id="navbarResponsive">
+                    <ul className="navbar-nav ms-auto text-sm md:text-base md:space-x-6">
+                        <li className="nav-item dropdown">
                             <a className="nav-link text-[#696E77] hover:text-[#f57920]" href="https://tplinsurance.com/about-us/">
                                 About Us
                             </a>
                             {/* <ul className="dropdown-menu">
-                                <li><a href="https://tplinsurance.com/about-us/">Who We Are</a></li>
-                                <li><a href="https://tplinsurance.com/about-us/board-of-directors/">Board of Directors</a></li>
-                                <li><a href="https://tplinsurance.com/committees/">Committees</a></li>
+                                <li className='dropdown-item'><a href="https://tplinsurance.com/about-us/">Who We Are</a></li>
+                                <li className='dropdown-item'><a href="https://tplinsurance.com/about-us/board-of-directors/">Board of Directors</a></li>
+                                <li   className='dropdown-item'><a href="https://tplinsurance.com/committees/">Committees</a></li>
                             </ul> */}
                         </li>
                         <li className="nav-item dropdown">
@@ -106,7 +108,7 @@ const NavbarComponent: React.FC = () => {
                                 </div>
                             </form>
                         </li>
-                        <li style={{maxHeight: "44px"}} className="nav-item flex items-center navButton text-center bg-[#f57920] hover:bg-white hover:border hover:border-[#f57920] hover:!text-[#f57920] mt-2.5 p-2.5 lg:mt-0 lg:p-0">
+                        <li style={{maxHeight: "44px"}} className="nav-item flex items-center navButton cursor-pointer text-center bg-[#f57920] hover:bg-white hover:border hover:border-[#f57920] hover:!text-[#f57920] mt-2.5 p-2.5 lg:mt-0 lg:p-0">
                             <a href="https://tplinsurance.com/my-tpli/">My TPLI</a>
                         </li>
                     </ul>

@@ -8,9 +8,32 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden!important;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
+
+/* html, body::-webkit-scrollbar {
+  width: 6px !important;  
+}
+
+html, body::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;  
+}
+
+html, body::-webkit-scrollbar-thumb {
+  background: #888 !important;  
+  border-radius: 10px !important;
+}
+
+html, body::-webkit-scrollbar-thumb:hover {
+  background: #555 !important; 
+} */
+
+
+html, body {
+  scrollbar-width: thin !important;  
+  scrollbar-color: #888 #f1f1f1 !important;  
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -37,6 +60,31 @@ code {
   box-shadow: none;
 }
 
+@media (min-width: 1025px) {
+  .navbar-toggler{
+    display: none;
+  }
+  .navbar-collapse{
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+  .navbar-nav{
+    display: flex;
+    flex-direction: row !important;
+  }
+  .navbar-brand img{
+    width: 65%;
+  }
+
+  .nav-container{
+    margin-top: 0.1rem !important;
+    padding: 0.5rem 6rem !important;
+    display: flex;
+    flex-wrap: nowrap !important;
+  }
+}
+
 @media (max-width: 1023px) {
   .navForm{
     display: block;
@@ -52,13 +100,13 @@ code {
   }
 }
 
-@media (min-width: 1196px) {
+@media (min-width: 1254px) {
   .navForm{
     display: block;
   }
 }
 
-@media (max-width: 1195px) {
+@media (max-width: 1253px) {
   .searchButton{
     display: block;
   }
@@ -106,7 +154,6 @@ code {
   .lastRowFooter{
     padding-inline: 0.5rem !important;
   }
-
   
 }
 
@@ -126,7 +173,7 @@ code {
 
 @media (min-width: 1026px) and (max-width: 1500px) {
   .appbtns img{
-    max-width: 200px;
+    max-width: 175px;
   }
 }
 
@@ -139,17 +186,6 @@ code {
 
     .appbtns img{
       min-width: 200px;
-    }
-
-    .navbar-brand img{
-      width: 65%;
-    }
-
-    .nav-container{
-      margin-top: 0.1rem !important;
-      padding: 0.5rem 6rem !important;
-      display: flex;
-      flex-wrap: nowrap !important;
     }
 
 }
@@ -239,7 +275,9 @@ code {
   .heroHeader {
     font-size: 24px !important; 
   }
-
+  .herofont{
+    font-size: 32px !important;
+  }
   .pro_IconBox {
     height: 100px; 
   }
@@ -259,6 +297,10 @@ code {
 }
 
 @media (max-width: 768px) {
+  .secContainerInner{
+    --bs-gutter-x: 0 !important;
+}
+
   /* .headerContent{
     position: absolute;
     top: 275px !important;
@@ -308,7 +350,7 @@ code {
   }
 
   .secContainerPara{
-    padding-inline: 38px !important;
+    padding-inline: 60px !important;
     line-height: 22px;
   }
 
@@ -343,9 +385,7 @@ code {
 
   .lowerFooter{
     padding-inline: 0 !important;
-  }
-
-  
+  }  
 }
 
 @media (max-width: 480px) {
@@ -368,7 +408,7 @@ code {
   }
 
   .appbtns img{
-    min-width: 110px;
+    min-width: 97px;
   }
 
 }
@@ -379,20 +419,28 @@ code {
   }
 }
 
+/* #video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1; 
+} */
   
 .herocontainer {
-  background-image: url("./images/banner.png");
+  /* background-image: url("./images/banner.png");
   background-size: contain;
   box-sizing: border-box;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   width: 100%;
-  height: 100vh;
-  background-position: center center;
+  height: 117vh;
+  /* background-position: center center; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 0 !important;
   margin-right: 0 !important;
+  overflow: hidden;
 }
 
 .heroInner{
@@ -400,7 +448,7 @@ code {
   top: 0;
   left: 0;
   right: 0;
-  margin-top: -95px;
+  margin-top: -30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -430,22 +478,27 @@ code {
   }
 }
 
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none; 
+  box-shadow: none; 
+  border: none;
+} 
+
 @media (max-width: 768px) {
+  .animation {
+    display: none; /* Hide the animation on mobile */
+  }
+
   .herocontainer{
-    background-image: url("./images/mobileBanner.jpg") !important;
+    background-image: url("../public/images/mobileBanner.jpg") !important;
     background-size: cover !important;
     background-position: top;
+    height: auto;
   }
 
   /* .navbar-toggler{
     padding-left: 50px !important;
   } */
-
-  .navbar-toggler:focus, .navbar-toggler:active {
-    outline: none; /* Removes the outline */
-    box-shadow: none; /* Removes any box-shadow */
-    border: none; /* Removes the border */
-  }
 
   .firstCol{
     width: 100% !important;
@@ -460,6 +513,10 @@ code {
   .thirdCol{
     width: 100% !important;
     padding-inline: 35px !important;
+  }
+
+  .navbar-brand{
+    width: 70% !important;
   }
 }
 
@@ -496,6 +553,10 @@ code {
     top: 70% !important;
     right: 10px !important;
 
+  }
+
+  .thirdContainerBoxes{
+    margin-bottom: 1rem !important;
   }
 }
 
@@ -579,7 +640,7 @@ code {
 }
 
 .footer{
-  background-image: url("./images/footer.jpg");
+  background-image: url("../public/images/footer.jpg");
   background-size: cover;
   box-sizing: border-box;
   margin-top: 0px !important;
@@ -733,13 +794,36 @@ code {
   margin-left: 25px !important;
 }
 
-.nav-link{
+@media (max-width: 1411px) {
+  .nav-link{
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 1370px) {
+  .navbar-brand{
+    margin-right: 0 !important;
+    width: 20%;
+  }
+}
+
+@media (min-width: 1412px) {
+  .nav-link{
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+  }
+}
+
+/* .nav-link{
   margin: 0 !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
   font-weight: 400 !important;
   font-size: 15px !important;
-}
+} */
 
 .form-control{
   position: relative;
@@ -767,6 +851,8 @@ code {
   font-size: 36px !important;
   font-weight: 600 !important;
   padding: 0px !important;
+  letter-spacing: normal;
+  line-height: 1.3;
 }
 
 .boxContainer{
@@ -779,6 +865,7 @@ code {
 .box-para{
   font-size: 16px !important;
   text-align: center !important;
+  line-height: 1.7;
 }
 
 .appSec{
@@ -800,13 +887,10 @@ code {
   font-size: 1.1rem !important;
 }
 
-/* .fLower2{
-  padding-inline: 4rem;
-} */
 
 .appbtns{
   padding: 20px 10px !important;
-  max-width: 250px;
+  max-width: 220px;
 }
 
 .appCTA{
@@ -872,6 +956,7 @@ code {
 .recentPostInner p{
   font-size: 16px !important;
   font-weight: 400 !important;
+  line-height: 1.7;
 }
 
 .footerSec {
@@ -906,5 +991,105 @@ code {
 
   .upper{
     flex-direction: row;
+  }
+}
+
+.secContainerHeader{
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.3;
+}
+
+.secContainerPara{
+  line-height: 22px;
+}
+
+.emoji{
+  display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 0.07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.footerSocialButtons{
+  transition: 0.5s;
+}
+
+.recaptcha-container{
+  border: 1px solid #d3d3d3;
+  background: #f9f9f9;
+  color: #000;
+  width: 300px;
+  height: 74px;
+  margin-top: 25px;
+  padding-inline: 5px;
+  padding-left: 12px;
+}
+
+.recaptcha-checkbox{
+  border-radius: 2px;
+  background-color: #fff;
+  border: 2px solid #c1c1c1;
+  font-size: 1px;
+  height: 24px;
+  position: absolute;
+  width: 24px;
+  z-index: 1;
+}
+
+.checkbox{
+  width: 24px;
+  height: 24px;
+}
+
+.recaptcha-logo-img{
+  background-size: 32px;
+  height: 32px;
+  margin: 0 13px 0 13px;
+  width: 32px;
+}
+
+.recaptcha-label{
+  font-family: Roboto, helvetica, arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  padding-inline: 25px;
+}
+
+.rc-logo-text{
+  cursor: default;
+    font-family: Roboto, helvetica, arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.rc-anchor-pt{
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.recaptcha-logo{
+  padding-inline: 25px;
+}
+
+@media (min-width: 1280px) {
+  .lowerFooter{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .lowerFooter {
+      max-width: 1536px;
   }
 }

@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        '2xl': '2px 4px 8px 0px #444'
+      }
+    },
   },
   plugins: [
     scrollbarGutter(),
