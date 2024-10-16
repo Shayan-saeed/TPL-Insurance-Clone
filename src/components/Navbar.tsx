@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
-interface NavbarProps{
+interface NavbarProps {
     isOpen: boolean,
-    toggleMenu: () => void ,
+    toggleMenu: () => void,
 }
 
-const NavbarComponent: React.FC<NavbarProps> = ({isOpen, toggleMenu}) => {
+const NavbarComponent: React.FC<NavbarProps> = ({ isOpen, toggleMenu }) => {
 
     const [showSearch, setShowSearch] = useState(false);
 
-    
+
 
     const toggleSearch = () => {
         setShowSearch(!showSearch);
@@ -22,7 +22,11 @@ const NavbarComponent: React.FC<NavbarProps> = ({isOpen, toggleMenu}) => {
                     <img src="https://tplinsurance.com/storage/2023/07/TPL-insurance-logo-updatenew.webp" alt="TPL Insurance Logo" />
                 </a>
                 <button className="navbar-toggler border-none" onClick={toggleMenu} aria-expanded={isOpen} aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <div className={`menu-icon ${isOpen ? 'open' : ''}`}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </button>
 
                 <div className={`navbar-collapse ${isOpen ? 'block' : 'hidden'}`} id="navbarResponsive">
@@ -31,30 +35,11 @@ const NavbarComponent: React.FC<NavbarProps> = ({isOpen, toggleMenu}) => {
                             <a className="nav-link text-[#696E77] hover:text-[#f57920]" href="https://tplinsurance.com/about-us/">
                                 About Us
                             </a>
-                            {/* <ul className="dropdown-menu">
-                                <li className='dropdown-item'><a href="https://tplinsurance.com/about-us/">Who We Are</a></li>
-                                <li className='dropdown-item'><a href="https://tplinsurance.com/about-us/board-of-directors/">Board of Directors</a></li>
-                                <li   className='dropdown-item'><a href="https://tplinsurance.com/committees/">Committees</a></li>
-                            </ul> */}
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link text-[#696E77] hover:text-[#f57920]" href="#Products">
                                 Products
                             </a>
-                            {/* <ul className="dropdown-menu">
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Auto</a></li>
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Bike</a></li>
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Travel</a></li>
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Home</a></li>
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Health</a></li>
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Pawsurance</a></li>
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Mobile</a></li>
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Property</a></li>
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Marine</a></li>
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Cyber-Risk</a></li>
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Engineering</a></li>
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Miscellaneous</a></li>
-                            </ul> */}
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-[#696E77] hover:text-[#f57920]" href="https://tplinsurance.com/products/takaful/">Takaful</a>
@@ -63,11 +48,6 @@ const NavbarComponent: React.FC<NavbarProps> = ({isOpen, toggleMenu}) => {
                             <a className="nav-link text-[#696E77] hover:text-[#f57920]" href="https://tplinsurance.com/financial-statements/">
                                 Investors
                             </a>
-                            {/* <ul className="dropdown-menu">
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Financial Statements</a></li>
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Financial Analysis</a></li>
-                                <li><a href="https://tplinsurance.com/products/auto-insurance/">Investor Relations</a></li>
-                            </ul> */}
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-[#696E77] hover:text-[#f57920]" href="https://tplinsurance.com/products/takaful/">Media</a>
@@ -108,7 +88,7 @@ const NavbarComponent: React.FC<NavbarProps> = ({isOpen, toggleMenu}) => {
                                 </div>
                             </form>
                         </li>
-                        <li style={{maxHeight: "44px"}} className="nav-item flex items-center navButton cursor-pointer text-center bg-[#f57920] hover:bg-white hover:border hover:border-[#f57920] hover:!text-[#f57920] mt-2.5 p-2.5 lg:mt-0 lg:p-0">
+                        <li style={{ maxHeight: "44px" }} className="nav-item flex items-center navButton cursor-pointer text-center bg-[#f57920] hover:bg-white hover:border hover:border-[#f57920] hover:!text-[#f57920] mt-2.5 p-2.5 lg:mt-0 lg:p-0">
                             <a href="https://tplinsurance.com/my-tpli/">My TPLI</a>
                         </li>
                     </ul>

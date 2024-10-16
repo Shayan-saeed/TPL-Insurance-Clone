@@ -32,7 +32,7 @@ const Footer = () => {
                 <div className="footerSec">
                     <div className="upper flex flex-col  space-x-0 lg:space-x-4">
                         <div className="flex flex-col firstCol mb-4 lg:mb-0">
-                            <a href="#" className="appbtns">
+                            <a href="https://tplinsurance.com/" className="appbtns">
                                 <img src="https://tplinsurance.com/storage/2023/07/TPL-insurance-logo-updatenew.webp" alt="TPL Insurance Logo" width="100%" height="auto" />
                             </a>
                             <p className="text-md text-left text-balance" style={{ lineHeight: "22px" }}>
@@ -63,19 +63,19 @@ const Footer = () => {
                                 <img src="https://tplinsurance.com/storage/2023/07/Download-TPLI-APP.png" width={150} height="auto" alt="" />
                             </span>
                             <span className="social space-x-1">
-                                <a target="_blank" className="rounded-lg footerSocialButtons" href="https://twitter.com/TPL_Insurance">
+                                <a target="_blank" rel="noreferrer" className="rounded-lg footerSocialButtons" href="https://twitter.com/TPL_Insurance">
                                     <i className="bi bi-twitter-x"></i>
                                 </a>
-                                <a target="_blank" className="rounded-lg footerSocialButtons" href="https://www.facebook.com/insurancetpl/">
+                                <a target="_blank" rel="noreferrer" className="rounded-lg footerSocialButtons" href="https://www.facebook.com/insurancetpl/">
                                     <i className="bi bi-facebook"></i>
                                 </a>
-                                <a target="_blank" className="rounded-lg footerSocialButtons" href="https://twitter.com/TPL_Insurance">
+                                <a target="_blank" rel="noreferrer" className="rounded-lg footerSocialButtons" href="https://twitter.com/TPL_Insurance">
                                     <i className="bi bi-youtube"></i>
                                 </a>
-                                <a target="_blank" className="rounded-lg footerSocialButtons" href="https://twitter.com/TPL_Insurance">
+                                <a target="_blank" rel="noreferrer" className="rounded-lg footerSocialButtons" href="https://twitter.com/TPL_Insurance">
                                     <i className="bi bi-linkedin"></i>
                                 </a>
-                                <a target="_blank" className="rounded-lg footerSocialButtons" href="https://twitter.com/TPL_Insurance">
+                                <a target="_blank" rel="noreferrer" className="rounded-lg footerSocialButtons" href="https://twitter.com/TPL_Insurance">
                                     <i className="bi bi-instagram"></i>
                                 </a>
                             </span>
@@ -88,9 +88,9 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className="fLower2_2">
-                            <a href="" className="text-sm font-semibold hover:text-[#F36D35]">Privacy Policy</a>
-                            <a href="" className="text-sm font-semibold hover:text-[#F36D35]">Quality Policy</a>
-                            <a href="" className="text-sm font-semibold hover:text-[#F36D35]">Sitemap</a>
+                            <a href="https://tplinsurance.com/privacy-policy/" className="text-sm font-semibold hover:text-[#F36D35]">Privacy Policy</a>
+                            <a href="https://tplinsurance.com/storage/2023/09/quality-policy.pdf" className="text-sm font-semibold hover:text-[#F36D35]">Quality Policy</a>
+                            <a href="https://tplinsurance.com" className="text-sm font-semibold hover:text-[#F36D35]">Sitemap</a>
                         </div>
                     </div>
                     <div className="flex items-center justify-between border-t border-gray-200 pt-3 pb-4 lastRowFooter">

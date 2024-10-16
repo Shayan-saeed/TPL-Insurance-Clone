@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useMemo, useCallback } from 'react';
+import { useEffect, useRef, useMemo, useCallback } from 'react';
 import { useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 
 const Animation = () => {

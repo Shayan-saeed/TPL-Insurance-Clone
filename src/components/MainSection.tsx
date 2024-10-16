@@ -21,7 +21,7 @@ const MainSection = () => {
         <div className="container-fluid h-screen board" style={{ position: "relative" }}>
             <button className="sticky-button">
                 <span>
-                    <img draggable="false" className="emoji" role="img" src="https://s.w.org/images/core/emoji/15.0.3/svg/1f4dd.svg" alt="📝" />
+                    <img draggable="false" className="emoji" src="https://s.w.org/images/core/emoji/15.0.3/svg/1f4dd.svg" alt="📝" />
                 </span>
                 Get a Quote</button>
             <button className="sticky-whatsapp !rounded-full">
@@ -41,7 +41,7 @@ const MainSection = () => {
                                 <h2 className="herofont">
                                     INSURE YOUR <span className="block sm:inline text-[#f57920] heroAnimateText">{text}<Cursor cursorStyle='|' /></span>
                                 </h2>
-                                <a className="btn btn-primary btn_getinsu" href="#">Get Insured</a>
+                                <a className="btn btn-primary btn_getinsu" href="https://tplinsurance.com/#about">Get Insured</a>
                             </div>
                         </div>
                     </div>
@@ -76,9 +76,6 @@ const MainSection = () => {
                                     </span>
                                     <h3 className="probox-heading">Home</h3>
                                 </div>
-                                {/* <div className="flex flex-col items-center hover:shadow-lg">
-
-                            </div> */}
                             </div>
                             <div className="text-lg mb-1 text-[#a5a1a1]" style={{ marginTop: "2rem" }}>Other Products</div>
                             <div className="flex flex-wrap justify-start items-center gap-1 md:!gap-6 mt-1">
@@ -179,13 +176,13 @@ const MainSection = () => {
                         </div>
                     </div>
                     <div className="flex appCTA items-center justify-center">
-                        <a className="appbtns" rel="nofollow noopener" href="https://play.google.com/store/apps/details?id=com.tpl.insuranceapp&hl=en&gl=US" target="_blank">
+                        <a className="appbtns" rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.tpl.insuranceapp&hl=en&gl=US" target="_blank">
                             <img className="hover:rounded-3xl hover:shadow-2xl" decoding="async" src="https://tplinsurance.com/storage/2023/07/playstore-updated.webp" alt="auto" />
                         </a>
-                        <a className="appbtns" rel="nofollow noopener" href="https://apps.apple.com/pk/app/tpl-insurance/id1375881463" target="_blank">
+                        <a className="appbtns" rel="noreferrer" href="https://apps.apple.com/pk/app/tpl-insurance/id1375881463" target="_blank">
                             <img className="hover:rounded-3xl hover:shadow-2xl" decoding="async" src="https://tplinsurance.com/storage/2023/07/appstore-updated.webp" alt="auto" />
                         </a>
-                        <a className="appbtns" rel="nofollow noopener" href="https://appgallery.huawei.com/app/C104476707" target="_blank">
+                        <a className="appbtns" rel="noreferrer" href="https://appgallery.huawei.com/app/C104476707" target="_blank">
                             <img className="hover:rounded-3xl hover:shadow-2xl" decoding="async" src="https://tplinsurance.com/storage/2023/07/appgallery-updated.webp" alt="auto" />
                         </a>
                     </div>
@@ -198,21 +195,21 @@ const MainSection = () => {
                             <p>As pet parents, we understand that our fur babies are more than just animals—they are family. We go above and beyond to ensure their happiness and well-being, from feeding them the best food to giving them the love and attention they deserve. But what happens when your beloved pet faces unexpected accidents or illnesses? Veterinary…
                                 <a className="more-link" href="https://tplinsurance.com/pawsurance-the-ultimate-protection-for-your-fur-babies/">Continue reading</a>
                             </p>
-                            <a className="read-more" href="https://tplinsurance.com/pawsurance-the-ultimate-protection-for-your-fur-babies/" target="_blank">Read More</a>
+                            <a className="read-more" rel="noreferrer" href="https://tplinsurance.com/pawsurance-the-ultimate-protection-for-your-fur-babies/" target="_blank">Read More</a>
                         </div>
                         <div className="recentPostInner w-full lg:w-[30%] overflow-hidden">
                             <h2 className="pb-3">TPL Insurance Limited and Regal Automobiles Forge Strategic Partnership for Innovative Solutions in Auto Sector</h2>
                             <p>Signatories: Sohail Usman – Chairman, Regal Automobiles and Muhammad Aminuddin – CEO, TPL Insurance signed the agreement. Senior members from respective organizations were also present at the occasion. Standing From left to right: Shahrukh Zaib – Manager Finance, Regal Automobiles, Miftah-Ul-Huda – CFO, Regal Automobiles, Adeel Usman – Managing Director, Regal Automobiles, Talha H. Dawood…
                                 <a className="more-link" href="https://tplinsurance.com/tpl-insurance-limited-and-regal-automobiles-forge-strategic-partnership-for-innovative-solutions-in-auto-sector/">Continue reading</a>
                             </p>
-                            <a className="read-more" href="https://tplinsurance.com/tpl-insurance-limited-and-regal-automobiles-forge-strategic-partnership-for-innovative-solutions-in-auto-sector/" target="_blank">Read More</a>
+                            <a className="read-more" rel="noreferrer" href="https://tplinsurance.com/tpl-insurance-limited-and-regal-automobiles-forge-strategic-partnership-for-innovative-solutions-in-auto-sector/" target="_blank">Read More</a>
                         </div>
                         <div className="recentPostInner w-full lg:w-[30%] overflow-hidden">
                             <h2 className="pb-3">The Area Yield Index Insurance (AYII) Payout Ceremony</h2>
                             <p>The Area Yield Index Insurance (AYII) Payout Ceremony, a momentous event celebrating the approval and disbursement of successful crop claims, took center stage in Lahore on 8th December 2023. The event was hosted by TPL Insurance, where crop claim payouts of total PKR 17.5 Mn were made to The Bank of Punjab farmers of Pakpattan…
                                 <a className="more-link" href="https://tplinsurance.com/the-area-yield-index-insurance-ayii-payout-ceremony/">Continue reading</a>
                             </p>
-                            <a className="read-more" href="https://tplinsurance.com/the-area-yield-index-insurance-ayii-payout-ceremony/" target="_blank">Read More</a>
+                            <a className="read-more" rel="noreferrer" href="https://tplinsurance.com/the-area-yield-index-insurance-ayii-payout-ceremony/" target="_blank">Read More</a>
                         </div>
                     </div>
                 </div>
